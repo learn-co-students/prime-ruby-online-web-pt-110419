@@ -1,24 +1,25 @@
 # Add  code here!
 
-num=gets.chomp.to_i
 def prime?(num)
-  
+  is_prime = false
 count=0
 if (num==0)
-	puts "0 is not prime"
+	is_prime = false
 else
-	
 	i=2
-	while(i<num)
-		if (num%i==0)
+	  while(i<=num)
+		  if (num%i==0)
 			count+=1
 		end
-		i+=1
+	i+=1
 	end
 	
 end
-	if count>2
-		puts "#{num} is not a prime number"
+	if count>1 || num == 1 || num <=0
+	is_prime = false
 	else
-		puts "#{num} is a prime number"
+	is_prime = true
 	end
+	return is_prime
+	end
+	p prime?(5)
