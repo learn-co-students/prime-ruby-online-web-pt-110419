@@ -1,4 +1,4 @@
-# Implementing Prime
+f# Implementing Prime
 
 ## Objectives
 
