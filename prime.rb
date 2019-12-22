@@ -1,1 +1,3 @@
-# Add  code here!
+prime?(num)
+def 
+end
