@@ -7,18 +7,20 @@ def prime?(num)
   
   x = 2
   
+  if num < 2 
+    return non_prime
+  end
+    
   while ( x < num)
-  
-
-  ( num %  x = z)
+    ( z = num %  x )
  
   
   if z == 0 
-    return non_prime
-  else
-    return prime
- 
+      return non_prime
+  end
+    x += 1 
 end
-    x + 1 
-end
+
+return prime
+
 end
